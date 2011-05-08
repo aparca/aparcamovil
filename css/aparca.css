@@ -1,0 +1,171 @@
+/* ========================= */ 
+/* RESET */ 
+/* Blueprint CSS Framework 1.0 */
+/* ========================= */
+html {border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;vertical-align:baseline;}
+table {border-collapse:separate;border-spacing:0;}
+p {margin-bottom:15px}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+a img {border:none;}
+:focus {outline:0;}
+li {list-style-type:none}
+
+/* ========================= */ 
+/* PX to EM */ 
+/* Url: http://pxtoem.com/*/
+/* ========================= */
+/*
+Base	12px/0.75em
+6px 	0.5em 	
+7px 	0.583em 
+8px 	0.667em 
+9px 	0.75em 	
+10px 	0.833em 
+11px 	0.917em 
+12px 	1em 	
+13px 	1.083em 
+14px 	1.167em 
+15px 	1.25em 	
+16px 	1.333em 
+17px 	1.417em 
+18px 	1.5em 	
+19px 	1.583em 
+20px 	1.667em 
+21px 	1.75em 	
+22px 	1.833em 	
+23px 	1.917em 	
+24px 	2em 	
+
+*/
+
+
+/* ========================= */ 
+/* COMMONS */ 
+/* ========================= */
+body {font-family:Helvetica, Arial, Helvetica, sans-serif; font-size:0.75em; background-color:#fff}
+
+	/*Screen resolution*/
+	/*
+	  iphone horizontal: 480px
+	  iphone portrait: 320px 	  
+	  smartphone: 240px
+	 */
+	.container {width:100%; padding:0;} 
+
+	/*Layout*/
+	.toLeft {float:left}
+	.toRight {float:right}
+	.toCenter {text-align:center}
+	.textRight {text-align:right}
+	.clear {clear:both;}
+	
+	/*Cabeceras*/	
+	h2 {font-size:1.167em}
+	
+/* ========================= */ 
+/* HEADER */ 
+/* ========================= */
+.header {background:#1c191d url(gfx/bg/header.png) repeat-x 0 0; padding-top:5px}
+.header h1 {float:left; padding:0 0 0 10px; margin:0}
+.header #nav-buscar {padding:0; margin:0; float:right}
+.header #nav-buscar a {display:block; text-decoration:none; padding:0 10px 5px 20px;}
+
+/* ========================= */ 
+/* MENU */ 
+/* ========================= */
+
+	/*Menu General*/
+	#menu-general {border-bottom:solid 5px #ffa910; background:#d8d9da url(gfx/bg/menu-general-normal.png) repeat-x 0 0; height: 27px;}
+	#menu-general a {background:#d8d9da url(gfx/bg/menu-general-normal.png) repeat-x 0 0; margin-left:1px; font-size:15px; font-weight:bold}
+	#menu-general a.active {background:#ffa016 url(gfx/bg/menu-general-active.png) repeat-x 0 0; color:#fff; text-shadow: 1px -1px 0 #999;}
+	#menu-general li {background-color:#ccc}
+	#menu-general li a span { padding-top:3px; padding-bottom:5px}
+	
+	#parkings span { background:url(gfx/bg/simbolo_parking.png) no-repeat 0 3px; padding-left:25px}
+	#gasto span {background:url(gfx/bg/simbolo_gasto.png) no-repeat 0 3px; padding-left:25px}
+	#mi-coche span {background:url(gfx/bg/simbolo_micoche.png) no-repeat 0 3px; padding-left:25px}
+	
+	/*Sub Menu*/
+	#sub-menu {border-top:solid 1px #eee; margin-top:3px;background-color:#ccc}
+	#sub-menu a { border-left:solid 1px #d8d9da;}
+	#sub-menu li {background-color:#ccc}
+	#sub-menu .active {background:url(gfx/bg/arrow-down.png) no-repeat 50% 100%; padding-bottom:7px}	
+	#sub-menu .active a {font-weight:bold; color:#fff; text-shadow: 1px -1px 0 #666; background-color:#999}
+
+	
+	/*Commons*/
+	#menu-general, 
+	#sub-menu {clear:both}
+	
+	#menu-general ul, 
+	#sub-menu ul {width:100%}
+	
+	#menu-general li, 
+	#sub-menu li { width:50%; float:left}
+	
+	#menu-general li a, 
+	#sub-menu li a {display:block; padding:5px 10px; text-decoration:none; color:#333; text-align:center; }
+	
+	.first {border-left:none}
+
+/* ========================= */ 
+/* CONTENT */ 
+/* ========================= */
+
+	/*Commons*/
+	#content {clear:both; margin:10px 0;}
+	#mensaje {padding:10px; border-bottom:solid 1px #ccc; margin-bottom:10px}
+	#mensaje p { margin-bottom:0}
+	
+	#content-mapa {margin-top:10px}
+	
+	/*form*/
+	#form {padding:10px 0 0 10px; margin-bottom:10px; border-bottom:solid 1px #f1f1f1; text-align:center}
+	#form #search {border-top:solid 2px #ccc;border-left:solid 2px #ccc;border-right:solid 1px #eee;border-bottom:solid 1px #eee; padding:5px 10px; }
+
+	/*Listado*/
+	#listado li {padding:10px 10px; border-bottom: solid 1px #eee }
+	#listado li a {text-decoration:none; color:#333}
+	#listado li a h2 {background:url(gfx/bg/arrow.png) no-repeat 97% 100%; line-height:1.5}
+	#listado li.bg-gris {background-color:#f4f4f4}
+	
+	#listado h2, 
+	#listado p {padding-left:25px}
+	
+	#listado p {padding-bottom:0; margin-bottom:0; }
+
+	/*Iconos*/
+	.con-plaza, 
+	.pocas-plazas, 
+	.sin-plaza, 
+	.sin-info-plaza { background-repeat:no-repeat; background-position:10px 10px; background-color:transparent}
+	
+	.con-plaza {background-image:url(gfx/icons/con-plaza.png)}
+	.pocas-plazas {background-image:url(gfx/icons/pocas-plazas.png)}
+	.sin-plaza {background-image:url(gfx/icons/sin-plaza.png)}
+	.sin-info-plaza {background-image:url(gfx/icons/sin-info-plaza.png)}
+	
+	/*Gasto*/
+	#content-gasto {padding:20px}
+	#content-gasto h2 {background:url(gfx/icons/con-plaza.png) no-repeat 0 0; padding:5px 0 20px 30px; color:#333}	
+        #content-gasto dl {margin: 0 10px}
+	#content-gasto dt {font-size:13px; padding-bottom: 5px}
+	#content-gasto dd {font-size:40px; text-align:center; color:#000; padding-top: 10px; padding-bottom: 20px}	
+
+/* ========================= */ 
+/* BUTTONS */ 
+/* ========================= */	
+
+	/*button*/
+	button {font-size:12px; font-weight:bold; border:none;background-color:transparent; cursor:pointer}	
+	button p {background-repeat:no-repeat; background-position:0 0}
+	button span {background-repeat:no-repeat; background-position:100% 0; display:block; height:30px; color:#525252; padding:7px 20px 0 20px;}	
+	
+	/*grey*/
+	button.grey p {background-image:url(gfx/button/grey-left.png)}
+	button.grey span {background-image:url(gfx/button/grey-right.png)}	 
+        
+        .desCheckIn, #show-detail {background-color: #ccc; color: #333; padding: 5px 20px 5px 20px; clear: both}
